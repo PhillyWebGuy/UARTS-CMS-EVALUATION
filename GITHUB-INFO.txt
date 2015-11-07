@@ -1,0 +1,3 @@
+Files for class can be found here:
+
+https://github.com/PhillyWebGuy/UARTS-CMS-EVALUATION
