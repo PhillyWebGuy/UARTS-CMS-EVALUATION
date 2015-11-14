@@ -1,0 +1,37 @@
+[[$pageHeader]]
+<div id="content" class="blog-post">
+  <h2 class="title"><a href="[[~[[*id]]]]">[[*pagetitle]]</a></h2>
+  <p class="post-info">
+  Posted on [[*publishedon:strtotime:date=`%b %d, %Y`]] | 
+  Tags: [[*tags:notempty=`[[!tolinks? &items=`[[*tags]]` &tagKey=`tag` &target=`1`]]`]] | 
+  <a href="[[~[[*id]]]]#comments" class="comments">
+    Comments ([[!QuipCount? &thread=`blog-post-[[*id]]`]])
+  </a>
+  </p>
+  <div class="entry">
+    <p>[[*introtext]]</p>
+    <hr />
+    [[*content]]
+   </div>
+  <div class="postmeta">
+    [[*tags:notempty=`
+<span class="tags">Tags: [[!tolinks? &items=`[[*tags]]` &tagKey=`tag` &target=`1`]]</span>
+    `]]
+    <br class="clear" />
+  </div>
+  <hr />
+  <div class="post-comments" id="comments">[[!Quip?
+      &thread=`blog-post-[[*id]]`
+      &replyResourceId=`123`
+      &closeAfter=`30`
+    ]]
+    <br /><br />
+    [[!QuipReply?
+       &thread=`blog-post-[[*id]]`
+       &moderate=`1`
+       &moderatorGroup=`Moderators`
+       &closeAfter=`30`
+    ]]
+  </div>
+</div>
+[[$pageFooter]]
