@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" 
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <title>My First Revolutionary Page</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style type="text/css" media="screen">
+        #content{width:80%;margin:auto;border:5px groove #a484ce;}
+        #content h1{color:#a484ce;padding:10px 20px;text-align:center;}
+        #content p{padding:20px;text-align:center;}
+    </style>
+</head>
+<body>
+    <div id="content">
+        [[*content]]
+    </div>
+[[!myTestSnippet? &input=`Hello World`]]
+<footer>
+[[$footerText]]
+</footer>
+</body>
+</html>
